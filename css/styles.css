@@ -596,6 +596,7 @@ fill: var(--accent-txt-cl);
         align-items: center;
         padding: 8px 24px;
         gap: 16px;
+        color: var(--accent-txt-cl);
 
         background: #4D5AE5;
             border-radius: 4px;
@@ -704,4 +705,11 @@ fill: var(--accent-txt-cl);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: background-color, box-shadow;
+}
+
+.button-footer:hover,
+.button-footer:focus
+.modal-button:hover,
+.modal-button:focus {
+background-color: #404BBF;
 }
