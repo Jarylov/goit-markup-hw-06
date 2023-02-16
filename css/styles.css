@@ -589,17 +589,51 @@ fill: var(--accent-txt-cl);
     background-color: #31D0AA;
 }
 
-.button-footer {
-    display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 8px 24px;
-        gap: 16px;
-        color: var(--accent-txt-cl);
+.form-footer {
+ margin-left:80px;
+}
 
-        background: #4D5AE5;
-            border-radius: 4px;
+.text-form-footer {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+.footer-form-label {
+width: 80px;
+}
+
+
+.footer-form-field {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px
+}
+
+.button-footer {
+display: flex;
+width: 165px;
+height: 40px;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    color: var(--accent-txt-cl);
+margin-right: 0;
+    background: #4D5AE5;
+    border-radius: 4px;
+    border: 0;
+    margin-left: auto;
+    margin-top: 25px;
+transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color;
 }
 
 
@@ -681,7 +715,7 @@ fill: var(--accent-txt-cl);
     background: #404BBF; 
 }
 
-.cfontact-form {
+.modal-form {
 display: flex;
 flex-direction: column;
 row-gap: 8px;
@@ -693,7 +727,16 @@ letter-spacing: 0.01em;
 color: #8E8F99;
 }
 
+.modal-form-label {
+
+}
+
+.modal-form-icon {
+
+}
+
 .form-text {
+display: block;
 font-size: 16px;
 line-height: 24px;
 text-align: center;
@@ -701,14 +744,18 @@ letter-spacing: 0.02em;
 color: #2E2F42;
 }
 
-.label-chek {
+.modal-form-group {
+
+}
+
+.modal-form-checkbox {
 font-size: 12px;
 line-height: calc(16/ 24);
 letter-spacing: 0.04em;
 margin-bottom: 24px;
 }
 
-.contact-form-input {
+.modal-form-field {
 width: 100%;
 height: 40px;
 
@@ -716,7 +763,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
 
-.contact-form-message {
+.modal-form-comment {
     width: 100%;
     height:100px;
     padding: 15px;
@@ -725,7 +772,15 @@ border-radius: 4px;
     border-radius: 4px;
 }
 
-.link-form {
+.modal-form-agreement {
+
+}
+
+.modal-form-desc {
+    
+}
+
+.modal-form-link {
     text-decoration: none;
 }
 

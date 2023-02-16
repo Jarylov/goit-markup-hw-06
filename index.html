@@ -474,12 +474,11 @@
           </ul>
         </div>
         <form class="form-footer">
-          <label>
-            Email
-            <input type="email" name="email" placeholder="E-mail" />
+          <label class="footer-form-label" for="user_email"><span class="text-form-footer">Subscribe</span></label>
+              <input class="footer-form-field" type="text" id="user_email" placeholder="E-mail" />
           </label>
-          <button class="button-footer" type="submit">Subscribe</button>
         </form>
+         <button class="button-footer" type="submit">Subscribe</button>
       </div>
     </footer>
 
@@ -491,51 +490,60 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <form class="cfontact-form">
-          <b class="form-text">Leave your contacts and we will call you back</b>
-          <label class="label-input">
-            Name
+        <strong class="form-text"
+          >Leave your contacts and we will call you back</strong
+        >
+        <form class="modal-form" name="modal_form">
+          <!-- name field -->
+          <label class="modal-form-label" for="user_sign">Name</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="text" id="user_sign" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Phone field -->
+          <label class="modal-form-label" for="user_telephone">Phone</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="tel" id="user_telephone" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Email field -->
+          <label class="modal-form-label" for="user_email">Email</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="text" id="user_email" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Comment field -->
+          <label class="modal-form-label" for="user_comment">Comment</label>
+          <textarea
+            class="modal-form-comment"
+            name="user_comment"
+            id="user_comment"
+            rows="6"
+            placeholder="Type your comment..."
+          ></textarea>
+          <!-- Agreement field -->
+          <label class="modal-form-agreement" for="user_agreement">
             <input
-              type="text"
-              class="contact-form-input"
-              name="username"
-              autofocus
-              required
+              class="modal-form-checkbox"
+              type="checkbox"
+              name="user_agreement"
+              id="user_agreement"
             />
+            <span class="modal-form-desc">
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="" target="_blank"
+                >Privacy Policy</a
+              >
+            </span>
           </label>
-          <label class="label-input">
-            Phone
-            <input
-              type="tel"
-              class="contact-form-input"
-              name="phone_number"
-              required
-            />
-          </label>
-          <label class="label-input">
-            Email
-            <input
-              type="email"
-              class="contact-form-input"
-              name="email"
-              required
-            />
-          </label>
-          <label class="label-input">
-            Comment
-            <textarea
-              name="feedback"
-              class="contact-form-message"
-              rows="5"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <label class="label-chek">
-            <input type="checkbox" name="hobby" value="music" />
-            I accept the terms and conditions of the
-            <a href="" class="link-form"> Privacy Policy</a>
-          </label>
-          <button class="contact-form-btn" type="submit">Send</button>
+
+          <button class="contact-form-btn btn" type="submit">Send</button>
         </form>
       </div>
     </div>
