@@ -771,7 +771,7 @@ color: var(--dark-bg);
 }
 
 
-.form-checkbox-input {
+.modal-form-checkbox {
 font-size: 12px;
 line-height: calc(16/ 24);
 letter-spacing: 0.04em;
@@ -839,16 +839,43 @@ letter-spacing: 0.04em;
 color: #757575;
 }
 
-.modal-form-checkbox {
+.form-checkbox-input {
 display: block;
+position: absolute;
+width: 16px;
+height: 16px;
+border: none;
+}
+
+.form-checkbox-label::before {
     position: absolute;
+    content: '';
+    top: 0px;
+    left: -24px;
     width: 16px;
     height: 16px;
-    border: none;
+    border: 1.25px solid var(--dark-bg);
+    border-radius: 2px;
+    background-color: var(--accent-txt-cl);
+    transition: border 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+
+.form-checkbox-input:checked + .form-checkbox-label::before {
+    background-color: var(--secondary-bg-cl);
+    background-image: url(../images/checkbox.svg);
+    border-color:var(--secondary-bg-cl) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    fill: var(--accent-txt-cl);
 }
 
 .modal-form-link {
-    text-decoration: none;
+display: inline-block;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+color: var(--secondary-bg-cl);
 }
 
 .contact-form-btn {
