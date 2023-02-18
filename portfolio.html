@@ -355,12 +355,26 @@
             </li>
           </ul>
         </div>
-        <form class="form-footer">
-          <label class="modal-form-label" for="user_email"><b class="text-form-footer">Subscribe</b></label>
-              <input class="footer-form-field" type="text" id="user_email" placeholder="E-mail" />
-          </label>
-        </form>
-         <button class="button-footer" type="submit">Subscribe</button>
+        <div class="subscrible-wrapper">
+          <b class="text-form-footer">Subscribe</b>
+          <form class="form-footer">
+            <label class="footer-form-label">
+              <input
+                class="footer-form-field"
+                type="email"
+                placeholder="E-mail"
+                name="subscrible-email"
+                required
+              />
+            </label>
+            <button class="button-footer" type="submit">
+              Subscribe
+              <svg class="subscrible-icon" width="" height="">
+                <use href=""></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
