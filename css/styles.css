@@ -791,7 +791,7 @@ transition: border 250ms var(--timing-function);
 
 .modal-form-input:focus {
 outline: none;
-border: var(--hover-bt);
+border-color: var(--hover-bt);
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -817,7 +817,7 @@ font-size: 12px;
 }
 
 .modal-form-comment:focus {
-    border: var(--hover-bt);
+    border-color: var(--hover-bt);
     outline: none;
 }
 
@@ -879,22 +879,19 @@ color: var(--secondary-bg-cl);
 }
 
 .contact-form-btn {
-    width: 169px;
-    height: 56px;
+    width: 170px;
     padding: 16px 32px;
-        margin: 0 auto;
-        background-color: #4D5AE5;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        border: none;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(24 / 16);
-        letter-spacing: 0.04em;
-        color: var(--accent-txt-cl);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: background-color, box-shadow;
+    margin: 0 auto;
+    background-color: var(--secondary-bg-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.04em;
+    color: var(--accent-txt-cl);
+    transition: box-shadow 250ms var(--timing-function);
 }
 
 .button-footer:hover,
@@ -902,4 +899,5 @@ color: var(--secondary-bg-cl);
 .contact-form-btn:hover,
 .contact-form-btn:focus {
 background-color: #404BBF;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
