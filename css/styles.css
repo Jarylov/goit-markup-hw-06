@@ -586,6 +586,10 @@ fill: var(--accent-txt-cl);
     background-color: #31D0AA;
 }
 
+.subscrible-wrapper {
+   
+}
+
 .form-footer {
 display: flex;
 justify-content: center;
@@ -600,9 +604,9 @@ line-height: 1.5;
 color: #FFFFFF;
 }
 
-.footer-form-label {
+/* .footer-form-label {
 width: 80px;
-}
+} */
 
 
 .footer-form-field {
@@ -620,26 +624,24 @@ width: 80px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .button-footer {
-display: flex;
-height: 40px;
-margin-left: 24px;
+display: flex;margin-left: 24px;
 height: 40px;
 padding: 8px 24px;
-color: var(--accent-txt-cl);
-margin-right: 0;
-    background-color: #4D5AE5;
-    border-radius: 4px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, background-color;
+background-color: #4D5AE5;
+border-radius: 4px;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: color, background-color;
 
 font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.06em;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.06em;
+color: var(--accent-txt-cl);
 }
 
 
