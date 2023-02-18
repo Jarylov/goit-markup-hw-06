@@ -19,6 +19,7 @@
 
     --trns-fast: 400ms ease-in;
     --trns-slow: 1800ms ease-in-out;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* reset styles */
@@ -594,6 +595,12 @@ fill: var(--accent-txt-cl);
    
 }
 
+.subscrible-icon {
+display: inline-block;
+margin-left: 16px;
+fill: #FFFFFF;
+}
+
 .form-footer {
 display: flex;
 justify-content: center;
@@ -617,6 +624,7 @@ width: 80px;
     width: 264px;
     height: 40px;
     padding: 8px 16px;
+    color: #FFFFFF;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -682,8 +690,7 @@ color: var(--accent-txt-cl);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 48px;
-    width: 408px;
+    width: 478px;
     min-height: 576px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -731,7 +738,7 @@ color: var(--accent-txt-cl);
 display: flex;
 flex-direction: column;
 row-gap: 8px;
-margin: 24px;
+padding: 72px 24px 24px 24px;
 font-weight: 500;
 font-size: 12px;
 line-height: 14px;
@@ -739,12 +746,18 @@ letter-spacing: 0.01em;
 color: #8E8F99;
 }
 
-.modal-form-label {
-
+.modal-form-group {
+position: relative;
+margin-bottom: 8px;
 }
 
 .modal-form-icon {
-
+position: absolute;
+top: 50%;
+left: 16px;
+transform: translateY(-50%);
+fill: var(--primary-txt-cl);
+transition: fill 250ms --timing-function;
 }
 
 .form-text {
@@ -770,7 +783,7 @@ margin-bottom: 24px;
 .modal-form-field {
 width: 100%;
 height: 40px;
-
+padding-left: 34px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
