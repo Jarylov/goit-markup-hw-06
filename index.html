@@ -513,7 +513,7 @@
           >
           <div class="modal-form-group">
             <input
-              class="modal-form-field"
+              class="modal-form-input"
               type="text"
               id="user_sign"
               required
@@ -526,7 +526,7 @@
           <label class="modal-form-label" for="user_telephone">Phone</label>
           <div class="modal-form-group">
             <input
-              class="modal-form-field"
+              class="modal-form-input"
               type="tel"
               id="user_telephone"
               required
@@ -539,7 +539,7 @@
           <label class="modal-form-label" for="user_email">Email</label>
           <div class="modal-form-group">
             <input
-              class="modal-form-field"
+              class="modal-form-input"
               type="text"
               id="user_email"
               required
@@ -557,23 +557,22 @@
             rows="6"
             placeholder="Type your comment..."
           ></textarea>
-          <!-- Agreement field -->
-          <label class="modal-form-agreement" for="user_agreement">
+          <!-- Checkbox field -->
+          <div class="form-checkbox">
             <input
-              class="modal-form-checkbox"
+              class="form-checkbox-input"
               type="checkbox"
-              name="user_agreement"
-              id="user_agreement"
+              name="user_checkbox"
+              id="user_checkbox"
               required
             />
-            <span class="modal-form-desc">
-              I accept the terms and conditions of the
+            <label class="form-checkbox-label" for="user_checkbox"
+              >I accept the terms and conditions of the
               <a class="modal-form-link" href="" target="_blank"
                 >Privacy Policy</a
-              >
-            </span>
-          </label>
-
+              ></label
+            >
+          </div>
           <button class="contact-form-btn btn" type="submit">Send</button>
         </form>
       </div>
